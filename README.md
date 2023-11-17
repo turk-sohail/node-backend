@@ -27,7 +27,13 @@ for example `dotenv` file using `server config` file .One more example is use of
 
 download this template from github open in editor.In the root directory create `.env` file.
 Then add the following envoirment variables
+
+
 ```
+
+
+
+
 PORT=etc /3000
 
 
@@ -60,4 +66,9 @@ create a new file inside src/config/config.json and add code in following patter
     "dialect": "mysql"
   }
 }
+
+go to root folder and run npm install or i 
+
+then use npx sequelize cli  
+npx sequelize init command  }
 

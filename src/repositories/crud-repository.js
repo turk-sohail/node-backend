@@ -1,4 +1,7 @@
+const { Http } = require("winston/lib/winston/transports");
 const { Logger } = require("../config");
+const { AppError } = require("../utils");
+const { StatusCodes } = require("http-status-codes");
 
 
 class CrudRepository {
@@ -12,7 +15,7 @@ class CrudRepository {
             return response;
         } catch (error) {
             Logger.error("There was error in crud:Repositry :create");
-            throw error;
+            throw Error;
         }
     }
 

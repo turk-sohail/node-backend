@@ -66,3 +66,15 @@
 2023-11-12 21:39:33 [LOGGING] info: server is running on port 3000
 2023-11-12 21:47:22 [LOGGING] info: server is running on port 3000
 2023-11-12 21:47:29 [LOGGING] info: server is running on port 3000
+2023-11-22 11:41:09 [LOGGING] info: server is running on port 3000
+2023-11-22 16:25:34 [LOGGING] info: server is running on port 3000
+2023-11-22 16:29:19 [LOGGING] error: There was error in crud:Repositry :create
+2023-11-22 16:30:16 [LOGGING] info: server is running on port 3000
+2023-11-22 16:32:45 [LOGGING] info: server is running on port 3000
+2023-11-22 16:33:36 [LOGGING] info: server is running on port 3000
+2023-11-22 16:34:07 [LOGGING] info: server is running on port 3000
+2023-11-22 16:34:12 [LOGGING] error: There was error in crud:Repositry :create
+2023-11-22 16:36:09 [LOGGING] info: server is running on port 3000
+2023-11-22 16:37:32 [LOGGING] info: server is running on port 3000
+2023-11-22 16:38:35 [LOGGING] info: server is running on port 3000
+2023-11-28 15:01:25 [LOGGING] info: server is running on port 3000

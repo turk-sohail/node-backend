@@ -7,6 +7,9 @@ router.post("/",
     ValidateCreateRequest.validateCreateRequest,
     AirplaneController.createAirplane
 )
+router.get("/",
+    AirplaneController.getAirplanes
+)
 
 
 module.exports = router;

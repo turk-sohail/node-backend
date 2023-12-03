@@ -10,58 +10,43 @@ class CrudRepository {
     }
 
     async create(data) {
-        try {
-            const response = await this.model.create(data);
-            return response;
-        } catch (error) {
-            Logger.error("There was error in crud:Repositry :create");
-            throw Error;
-        }
+
+        const response = await this.model.create(data);
+        return response;
+
     }
 
     async destroy(data) {
-        try {
-            const rersponse = await this.model.destroy({
-                where: {
-                    id: data
-                }
-            });
-        } catch (error) {
-            Logger.error("There was error in crud:Repositry :destroy");
-            throw error;
-        }
+
+        const rersponse = await this.model.destroy({
+            where: {
+                id: data
+            }
+        });
     }
 
     async get(data) {
-        try {
-            const response = await this.model.findByPk(data);
-            return response;
-        } catch (error) {
-            Logger.error("There was error in crud:Repositry :get");
-            throw error;
-        }
+
+        const response = await this.model.findByPk(data);
+        return response;
+
     }
 
     async getAll() {
-        try {
-            const response = await this.model.findAll();
-            return response;
-        } catch (error) {
-            Logger.error("There was error in crud:Repositry :getAll");
-            throw error;
-        }
+
+        const response = await this.model.findAll();
+        return response;
+
     }
 
     async updateOne(id, data) {
-        try {
-            const response = await this.model.update(data, {
-                where: {
-                    id
-                }
-            })
-        } catch (error) {
 
-        }
+        const response = await this.model.update(data, {
+            where: {
+                id
+            }
+        })
+
     }
 }
 

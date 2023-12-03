@@ -24,6 +24,15 @@ class AirplaneService {
 
     }
 
+    async getAirplanes() {
+        try {
+            const airplanes = await this.AirplaneRepo.getAll();
+            return airplanes;
+        } catch (error) {
+            throw new AppError("cannot fetch data of all ariplanes", StatusCodes.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 }
 
 

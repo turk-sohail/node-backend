@@ -49,6 +49,15 @@ class AirplaneService {
         }
     }
 
+    async updateAirplane(id, data) {
+        try {
+            const airplane = await this.AirplaneRepo.updateOne(id, data);
+            return airplane;
+        } catch (error) {
+            throw new AppError("cannot delete the ariplane", StatusCodes.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 }
 
 

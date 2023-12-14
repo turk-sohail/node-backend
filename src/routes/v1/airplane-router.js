@@ -17,6 +17,10 @@ router.get("/:id",
 
 router.delete("/:id",
     AirplaneController.deleteAirplane
+)
+
+router.patch("/:id",
+    AirplaneController.updateAirplane
 
 )
 
